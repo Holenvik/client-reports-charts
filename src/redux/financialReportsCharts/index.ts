@@ -15,8 +15,7 @@ export const financialReportCharts = createApi({
       FinancialReportsChart[],
       number
     >({
-      query: (reportId: number) =>
-        `financialReportCharts?${`reportId=${reportId}`}`,
+      query: (reportId) => `financialReportCharts?${`reportId=${reportId}`}`,
       providesTags: (result) =>
         result
           ? [

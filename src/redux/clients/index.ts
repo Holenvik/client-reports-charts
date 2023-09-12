@@ -11,8 +11,8 @@ export const clients = createApi({
       query: (search) => `clients?${search && `q=${search}`}`,
       providesTags: ["Clients"],
     }),
-    addClient: build.mutation({
-      query: (body: AddClientPayload) => ({
+    addClient: build.mutation<ClientItem, AddClientPayload>({
+      query: (body) => ({
         url: "clients",
         method: "POST",
         body,

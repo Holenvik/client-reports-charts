@@ -12,7 +12,7 @@ export const financialReport = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: (build) => ({
     getFinanceReportsByUserId: build.query<FinancialReport[], number>({
-      query: (clientId: number) => `financialReport?${`clientId=${clientId}`}`,
+      query: (clientId) => `financialReport?${`clientId=${clientId}`}`,
       providesTags: (result) =>
         result
           ? [
