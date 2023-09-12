@@ -1,0 +1,19 @@
+.app {
+  &Wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &Search {
+      width: 304px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.chart {
+  &Wrapper {
+    position: relative;
+  }
+
+  &CloseIcon {
+    &Wrapper {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+    }
+  }
+}

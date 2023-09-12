@@ -1,0 +1,14 @@
+.spinner {
+  &Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,18 @@
+.report {
+  &Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &ChartsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+}
